@@ -13,6 +13,8 @@ namespace CustomRuleTiles
         private Texture2D tileSet = null;
 
         private List<Sprite> sprites = new List<Sprite>();
+
+#if UNITY_EDITOR
         [ContextMenu("Create Rules")]
         public void CreateRules()
         {
@@ -676,5 +678,6 @@ namespace CustomRuleTiles
             };
             return rules;
         }
+#endif
     }
 }
